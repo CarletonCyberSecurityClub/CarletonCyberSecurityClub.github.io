@@ -848,6 +848,7 @@ section {
 .team .member .member-img {
   position: relative;
   overflow: hidden;
+
 }
 
 .team .member .social {
@@ -883,7 +884,7 @@ section {
 }
 
 .team .member .member-info {
-  padding: 25px 15px;
+  padding: 25px 10px;
 }
 
 .team .member .member-info h4 {
@@ -898,6 +899,11 @@ section {
   font-size: 13px;
   font-weight: 400;
   color: #aaaaaa;
+  max-width: 210px;
+  max-height: 20%;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
 }
 
 .team .member .member-info p {
@@ -905,6 +911,7 @@ section {
   font-size: 14px;
   line-height: 26px;
   color: #777777;
+  
 }
 
 .team .member:hover .social {
