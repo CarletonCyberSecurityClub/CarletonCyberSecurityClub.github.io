@@ -1,0 +1,41 @@
+.news-card {
+    border-radius: 8px;
+    min-width: 400px !important;
+    border: none!important;
+}
+
+.news-feed-image {
+    border-radius: 8px;
+    width: 100%;
+    max-width: 250px;
+    padding: 5px!important;
+}
+
+.news-date {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #4d8090;
+}
+
+.member-info span{
+    font-size: 10px!important;
+    color: black!important;
+}
+
+.member-info span.titles{
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #008080!important;
+}
+.username {
+    color: blue
+}
+
+.share {
+    color: blue
+}
+
+.spacer{
+    min-height: 2em;
+}
+
