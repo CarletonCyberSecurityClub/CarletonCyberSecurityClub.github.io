@@ -239,11 +239,12 @@
       var div = createElement('div', 'event');
       var square = createElement('div', 'event-category ' + ev.color);
       var time = createElement('span', '', ev.t);
-      var span = createElement('span', '', ev.eventName);
-
+      var span = createElement('span', 'event-title', ev.eventName);
+      var loc = createElement('span', 'event-location', ev.loc);
       div.appendChild(square);
       div.appendChild(time);
       div.appendChild(span);
+      div.appendChild(loc);
       wrapper.appendChild(div);
     });
 
@@ -323,8 +324,9 @@
 
 !function() {
   var data = [
-    { eventName: 'Classes Resume', calendar: 'School', color: 'orange', d: '2021-09-07', t: ''},
-    { eventName: 'ALLES! CTF 2021', calendar: 'CTF', color: 'green', d: '2021-09-03', t: '16:00'},
+    { eventName: 'Classes Resume', calendar: 'School', color: 'orange', d: '2021-09-07', t: '', loc: ''},
+    { eventName: 'ALLES! CTF 2021', calendar: 'CTF', color: 'green', d: '2021-09-03', t: '16:00', loc: ''},
+    { eventName: 'What is 5G? And the security behind it', color: 'blue', calendar: 'Event', d: '2021-09-16', t: '17:30', loc: 'Discord Server'}
   ];
 
   

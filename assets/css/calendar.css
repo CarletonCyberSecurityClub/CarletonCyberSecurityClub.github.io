@@ -207,7 +207,7 @@ body {
 }
 
 .events {
-  height: 75px;
+  /*height: 75px;*/
   padding: 7px 0;
   overflow-y: auto;
   overflow-x: hidden;
@@ -289,6 +289,15 @@ body {
   width: 5px;
   top: 12px;
   left: 14px;
+}
+
+.event-title{
+  font-weight: bold;
+}
+
+.event-location {
+  color: #353755;
+  font-size: 12px;
 }
 
 .entry.blue:after { background: rgba(156, 202, 235, 1); }
