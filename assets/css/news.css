@@ -1,14 +1,23 @@
 .news-card {
     border-radius: 8px;
-    min-width: 400px !important;
+    
     border: none!important;
 }
 
 .news-feed-image {
     border-radius: 8px;
     width: 100%;
-    max-width: 250px;
+    max-width: 200px!important;
+    max-height: 200px!important;
     padding: 5px!important;
+}
+
+.news-title, .notice .card-body h4{
+    font-size: 1rem!important;
+}
+
+.news-content, .notice .card-body p{
+    font-size: 0.8rem!important;
 }
 
 .news-date {
@@ -38,4 +47,3 @@
 .spacer{
     min-height: 2em;
 }
-

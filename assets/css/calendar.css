@@ -1,4 +1,4 @@
-*, *:before, *:after {
+#calendar *, #calendar *:before, #calendar *:after {
 -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 /*
@@ -128,8 +128,9 @@ body {
  color: rgba(255, 255, 255, .3);
 }
 
-.day.today {
-  color: rgba(156, 202, 235, 1);
+.today {
+  background-color: #f6f9fa!important;
+  border-radius: 5px;
 }
 
 .day-name {
@@ -171,6 +172,11 @@ body {
 .orange { background: rgba(247, 167, 0, 1); }
 .green { background: rgba(153, 198, 109, 1); }
 .yellow { background: rgba(249, 233, 0, 1); }
+
+.iblue { color: rgba(156, 202, 235, 1); }
+.iorange { color: rgba(247, 167, 0, 1); }
+.igreen { color: rgba(153, 198, 109, 1); }
+.iyellow { color: rgba(249, 233, 0, 1); }
 
 .details {
   position: relative;
@@ -241,12 +247,20 @@ body {
   font-size: 16px;
   line-height: 22px;
   letter-spacing: .5px;
-  padding: 2px 16px;
+  padding: 8px 5px;
   vertical-align: top;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .event.empty {
   color: #0e0e0e;
+}
+
+#selected-date .event {
+  background-color: #f6f9fa!important;
+  border-radius: 5px;
 }
 
 .event-category {

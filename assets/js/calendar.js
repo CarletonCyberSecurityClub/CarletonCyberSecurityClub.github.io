@@ -8,12 +8,14 @@
     this.current = moment().date(1);
     this.draw();
     var current = document.querySelector('.today');
+    
     if(current) {
       var self = this;
       window.setTimeout(function() {
-        self.openDay(current);
+        self.openDay(current, "selected-date");
       }, 500);
     }
+
   }
 
   Calendar.prototype.draw = function() {
@@ -182,41 +184,7 @@
     var day = this.current.clone().date(dayNumber);
 
     var currentOpened = document.querySelector('.details');
-
-    //Check to see if there is an open detais box on the current row
-    if(currentOpened && currentOpened.parentNode === el.parentNode) {
-      details = currentOpened;
-      arrow = document.querySelector('.arrow');
-    } else {
-      //Close the open events on differnt week row
-      //currentOpened && currentOpened.parentNode.removeChild(currentOpened);
-      if(currentOpened) {
-        currentOpened.addEventListener('webkitAnimationEnd', function() {
-          currentOpened.parentNode.removeChild(currentOpened);
-        });
-        currentOpened.addEventListener('oanimationend', function() {
-          currentOpened.parentNode.removeChild(currentOpened);
-        });
-        currentOpened.addEventListener('msAnimationEnd', function() {
-          currentOpened.parentNode.removeChild(currentOpened);
-        });
-        currentOpened.addEventListener('animationend', function() {
-          currentOpened.parentNode.removeChild(currentOpened);
-        });
-        currentOpened.className = 'details out';
-      }
-
-      //Create the Details Container
-      details = createElement('div', 'details in');
-
-      //Create the arrow
-      var arrow = createElement('div', 'arrow');
-
-      //Create the event wrapper
-
-      details.appendChild(arrow);
-      el.parentNode.appendChild(details);
-    }
+    
 
     var todaysEvents = this.events.reduce(function(memo, ev) {
       if(ev.date.isSame(day, 'day')) {
@@ -225,27 +193,35 @@
       return memo;
     }, []);
 
-    this.renderEvents(todaysEvents, details);
+    this.renderEvents(todaysEvents, "selected-date");
 
-    arrow.style.left = el.offsetLeft - el.parentNode.offsetLeft + 27 + 'px';
+    //arrow.style.left = el.offsetLeft - el.parentNode.offsetLeft + 27 + 'px';
   }
 
-  Calendar.prototype.renderEvents = function(events, ele) {
-    //Remove any events in the current details element
-    var currentWrapper = ele.querySelector('.events');
-    var wrapper = createElement('div', 'events in' + (currentWrapper ? ' new' : ''));
-
+  Calendar.prototype.renderEvents = function(events, event_div) {
+    var current_date = document.getElementById(event_div);
+    current_date.innerHTML = '';
     events.forEach(function(ev) {
-      var div = createElement('div', 'event');
-      var square = createElement('div', 'event-category ' + ev.color);
-      var time = createElement('span', '', ev.t);
-      var span = createElement('span', 'event-title', ev.eventName);
-      var loc = createElement('span', 'event-location', ev.loc);
-      div.appendChild(square);
-      div.appendChild(time);
+      var div = createElement('div', 'event card text-dark bg-light mb-2');
+      var square = createElement('i', 'bi bi-circle-fill i' + ev.color);
+      var span = createElement('span', 'event-title', "");
+      var title = createElement("span", "", ev.eventName);
+      span.appendChild(square);
+      span.appendChild(title);
+      
+      var timespan = createElement('span', 'event-location', '');
+      var timei = createElement('i', 'bi bi-clock', '');
+      timespan.appendChild(timei);
+      var time = createElement('span', '', ev.d + " " + ev.t);
+      timespan.appendChild(time);
+      var loc = createElement('span', 'event-location', 'Location: '+ev.loc);
+      var description = createElement('span', 'event-location', 'Description: '+ev.descr);
+
       div.appendChild(span);
+      div.appendChild(timespan);
       div.appendChild(loc);
-      wrapper.appendChild(div);
+      div.appendChild(description);
+      current_date.appendChild(div);
     });
 
     if(!events.length) {
@@ -253,29 +229,7 @@
       var span = createElement('span', '', 'No Events');
 
       div.appendChild(span);
-      wrapper.appendChild(div);
-    }
-
-    if(currentWrapper) {
-      currentWrapper.className = 'events out';
-      currentWrapper.addEventListener('webkitAnimationEnd', function() {
-        currentWrapper.parentNode.removeChild(currentWrapper);
-        ele.appendChild(wrapper);
-      });
-      currentWrapper.addEventListener('oanimationend', function() {
-        currentWrapper.parentNode.removeChild(currentWrapper);
-        ele.appendChild(wrapper);
-      });
-      currentWrapper.addEventListener('msAnimationEnd', function() {
-        currentWrapper.parentNode.removeChild(currentWrapper);
-        ele.appendChild(wrapper);
-      });
-      currentWrapper.addEventListener('animationend', function() {
-        currentWrapper.parentNode.removeChild(currentWrapper);
-        ele.appendChild(wrapper);
-      });
-    } else {
-      ele.appendChild(wrapper);
+      current_date.appendChild(div);
     }
   }
 
@@ -316,7 +270,7 @@
       ele.className = className;
     }
     if(innerText) {
-      ele.innderText = ele.textContent = innerText;
+      ele.innerText = ele.textContent = innerText;
     }
     return ele;
   }
@@ -324,18 +278,19 @@
 
 !function() {
   var data = [
-    { eventName: 'Classes Resume', calendar: 'School', color: 'orange', d: '2021-09-07', t: '', loc: ''},
-    { eventName: 'ALLES! CTF 2021', calendar: 'CTF', color: 'green', d: '2021-09-03', t: '16:00', loc: ''},
-    { eventName: 'What is 5G? And the security behind it', color: 'blue', calendar: 'Event', d: '2021-09-16', t: '17:30', loc: 'Discord Server'}
+    { eventName: 'Classes Resume', calendar: 'School', color: 'orange', d: '2021-09-07', t: '', loc: 'N/A', descr: 'None.'},
+    { eventName: 'ALLES! CTF 2021', calendar: 'CTF', color: 'green', d: '2021-09-03', t: '16:00', loc: 'Online', descr: 'None.'},
+    { eventName: 'What is 5G? And the security behind it', color: 'blue', calendar: 'Event', d: '2021-09-16', t: '17:30', loc: 'Discord Server', descr: 'None.'},
+    { eventName: 'Sunshine CTF 2021', color: 'green', calendar: 'CTF', d: '2021-09-18', t: '10:00', loc: 'Online', descr: 'None.'}
   ];
-
-  
 
   function addDate(ev) {
     
   }
 
   var calendar = new Calendar('#calendar', data);
-
+  const today = new Date();
+  const filterByToday = arr => arr.filter(({ d }) => new Date(d.replace(/-/g, "/")) >= today);
+  calendar.renderEvents(filterByToday(data) , "all");
 }();
 

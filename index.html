@@ -29,6 +29,7 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/news.css" rel="stylesheet">
   <link href="assets/css/calendar.css" rel="stylesheet">
+  <link href="assets/css/multi-carousel.css" rel="stylesheet">
   <!-- =======================================================
   * Template Name: Vlava - v4.3.0
   * Template URL: https://bootstrapmade.com/vlava-free-bootstrap-one-page-template/
@@ -74,123 +75,126 @@
     </div>
   </section><!-- End Hero -->
 
-  <main id="main">
-
+  
+  <main id="main p-1">
+    <div class="container-fluid">
+    <div class="row">
+    <div class="col">
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container px-1">
-
-        <div class="row content gx-3">
-          <div class="col-lg-6">
-            <div class="content mb-3">
-            <h2>Welcome!</h2>
+        <div class="section-title">
+          <h2>Welcome!</h2>
+          </div>
+          <div class="content col-10 mx-auto">
+            
             <h3>Welcome to the Carleton Cyber Security Club! This club is a student-run organization based out of Carleton University, created for sharing a love of cybersecurity.</h3>
             <p>
               We strive to share our knowledge and improve our own by hosting workshops and meetups, and participating in CTF challenges, and competitions. This club aims to accommodate all skill levels and interests, with sessions conducted on topics like career paths, certifications, challenges, professional advice and much more. It has something to offer for everyone! 
             </p></div>
-            <div class="spacer"></div>
-            <div class="content mt-4">
-            <h3><i class="bi bi-calendar"></i> Events</h3>
-            <p>Heres what we are up to in the coming weeks.</p>
-            <div id="calendar"></div>
           </div>
-          </div>
-          <div class="col-md-1 col-sm-0"></div>
-          <div class="col-md-4 col-sm-12 pt-4 pt-lg-0">
-            <h3><i class="bi bi-newspaper"></i> News</h3>
-            <div class="container">
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="list-group">
-                        <div class="list-group-item news-card bg-white mt-2">
-                          <div class="d-flex justify-content-between">
-                          <div class="col-md-3">
-                              <div class="feed-image"><img class="news-feed-image rounded img-fluid img-responsive" src="assets/img/ice.png"></div>
-                          </div>
-                          <div class="col-md-8 ml-2">
-                              <div class="news-feed-text">
-                                  <h5>We welcome a new club admin</h5><span>We welcome a new admin Sahil as VP Outreach.<br></span>
-                                  <div class="d-flex flex-row justify-content-between align-items-center mt-2">
-                                      <div class="d-flex creator-profile">
-                                          <div class="d-flex flex-column ml-2">
-                                              <span class="news-date">Sept,2021</span>
-                                          </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      </div>
-                  </div>
-                      <div class="list-group-item news-card bg-white mt-2">
-                          <div class="d-flex justify-content-between">
-                          <div class="col-md-3">
-                              <div class="feed-image"><img class="news-feed-image rounded img-fluid img-responsive" src="assets/img/htb.jpeg"></div>
-                          </div>
-                          <div class="col-md-8 ml-2">
-                              <div class="news-feed-text">
-                                  <h5>Carleton has joined HackTheBox</h5><span>Carleton is now listed as a team on HacktheBox. Join us to compete against other schools around the world.<br></span>
-                                  <div class="d-flex flex-row justify-content-between align-items-center mt-2">
-                                      <div class="d-flex creator-profile">
-                                          <div class="d-flex flex-column ml-2">
-                                              <span class="news-date">Sept,2021</span>
-                                          </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      </div>
-                  </div>
-                  <div class="list-group-item news-card bg-white mt-2">
-                    <div class="d-flex justify-content-between">
-                    <div class="col-md-3">
-                        <div class="feed-image"><img class="news-feed-image rounded img-fluid img-responsive" src="assets/img/cc.png"></div>
-                    </div>
-                    <div class="col-md-8 ml-2">
-                        <div class="news-feed-text">
-                            <h5>Carleton Team Places 2nd in National Cybersecurity Competition</h5><span>Team Rocket placed Second at CyberSCI Nationals, and will advance to compete internationally.<br></span>
-                            <div class="d-flex flex-row justify-content-between align-items-center mt-2">
-                                <div class="d-flex creator-profile">
-                                    <div class="d-flex flex-column ml-2">
-                                        <span class="news-date">July,2021</span>
+      
+    </section><!-- End About Section -->
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Featured</h2>
+          <p>Club events and workshops, past and present</p>
+        </div>
+        <div>
+          <div class="container text-center my-3">
+            <div class="row mx-auto my-auto justify-content-center">
+                <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="assets/img/events/Muhammad-5G-Talk.jpg" class="img-fluid">
                                     </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="assets/img/events/fridaynighthacksv2.png" class="img-fluid">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="assets/img/events/s2.png" class="img-fluid">
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="assets/img/events/network_flyer.png" class="img-fluid">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="assets/img/events/Tech_talk_poster1.png" class="img-fluid">
+                                    </div>
+                                    
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
                 </div>
-                </div>
-            </div>       
-      </div>
-              </div>
-          </div>
-          </div>
-          <div class="mt-4">
-          <h3><i class="bi bi-pin-angle"></i> Bulletin Board</h3>
-          <div class="row">
-            <div class="card text-dark bg-light mb-3">
-              <div class="card-body">
-              <h4>If you find a bug or mistake please report it!</h4>
-              <p>We could use your help maintaining this site. Let us know how we can improve it.</p>
             </div>
-            </div>
-            <div class="card mt-3 text-dark bg-light mb-3">
-              <div class="card-body">
-              <h4>Interested in helping manage this site?</h4>
-              <p>Contact ES or any other admin on Discord.</p>
-            </div>
-            </div>
-            <div class="card mt-3 text-dark bg-light mb-3">
-              <div class="card-body">
-              <h4>We are now on github!</h4>
-              <p>Check us out at <a href="https://github.com/CarletonCyberSecurityClub">CarletonCyberSecurityClub</a></p>
-            </div>
-            </div>
-            </div>
-          </div>
         </div>
+    </section><!-- End Portfolio Section -->
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
 
-      </div>
-    </section><!-- End About Section -->
+        <div class="section-title">
+          <h2>Calendar</h2>
+          <p>Heres what we are up to!</p>
+        </div>
+        <div>
+          <div class="row mx-auto justify-content-center">
+            <div class="col"><div id="calendar"></div></div>
+            <div class="col">
+              <h5>Selected</h5>
+              <div id="selected-date">
 
+              </div>
+              <h5>Upcoming</h5>
+              <div id="all">
+                
+              </div>
+            </div>
+          </div>
+    </div>
+    </div>
+    </section>
+    
     <!-- ======= Services Section ======= -->
     <section id="services" class="services section-bg">
       <div class="container">
@@ -246,10 +250,10 @@
         </div>
 
         <div class="row d-flex justify-content-center">
-          <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-3 col-md-6 col-sm-6 d-flex align-items-stretch">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/profiles/j_pic.png" class="img-fluid" alt="">
+                <img src="assets/img/profiles/j_pic.png" class="img img-thumbnail d-block w-50 m-auto rounded-circle" alt="">
               </div>
               <div class="member-info">
                 <h4>Justin</h4>
@@ -257,10 +261,10 @@
               </div>
             </div>
           </div>
-            <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+            <div class="col-lg-3 col-md-6 col-sm-6 d-flex align-items-stretch">
               <div class="member">
                 <div class="member-img">
-                  <img src="assets/img/profiles/dv_pic.jpg" class="img-fluid" alt="">
+                  <img src="assets/img/profiles/dv_pic.jpg" class="img img-thumbnail d-block w-50 m-auto rounded-circle" alt="">
                 </div>
                 <div class="member-info">
                   <h4>David</h4>
@@ -268,10 +272,10 @@
                 </div>
               </div>
             </div>
-          <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-3 col-md-6 col-sm-6 d-flex align-items-stretch">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/profiles/d_pic.png" class="img-fluid" alt="">
+                <img src="assets/img/profiles/d_pic.png" class="img img-thumbnail d-block w-50 m-auto rounded-circle" alt="">
               </div>
               <div class="member-info">
                 <h4>Desmond</h4>
@@ -279,10 +283,10 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-3 col-md-6 col-sm-6 d-flex align-items-stretch">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/profiles/rb_pic.png" class="img-fluid" alt="">
+                <img src="assets/img/profiles/rb_pic.png" class="img img-thumbnail d-block w-50 m-auto rounded-circle" alt="">
               </div>
               <div class="member-info">
                 <h4>Robert</h4>
@@ -290,14 +294,25 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-3 col-md-6 col-sm-6 d-flex align-items-stretch">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/profiles/e_pic.png" class="img-fluid" alt="">
+                <img src="assets/img/profiles/e_pic.png" class="img img-thumbnail d-block w-50 m-auto rounded-circle" alt="">
               </div>
               <div class="member-info">
                 <h4>Emma (ES)</h4>
                 <span class="titles">VP Training</span><span>CS Grad Student. If you listen to a shell, can you hear the C?</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/profiles/s_pic.jpeg" class="img img-thumbnail d-block w-50 m-auto rounded-circle" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Sahil</h4>
+                <span class="titles">VP Outreach</span><span>I'm a first-year CS student, interested in CyberSec (duh?). Diving into Cryptography and Network Security!</span>
               </div>
             </div>
           </div>
@@ -333,13 +348,13 @@
                 <div class="col-lg-4 info mt-4 mt-lg-0">
                   <i class="bi bi-envelope"></i>
                   <h4>Email:</h4>
-                  <p>cyberseccarleton@gmail.com</p>
+                  <p class="text-break">cyberseccarleton@gmail.com</p>
                 </div>
 
                 <div class="col-lg-4 info mt-4 mt-lg-0">
                   <i class="bi bi-linkedin"></i>
                   <h4>LinkedIn:</h4>
-                  <p>https://www.linkedin.com/company/carleton-cyber-security-club/</p>
+                  <p class="text-break">https://www.linkedin.com/company/carleton-cyber-security-club/</p>
                 </div>
               </div>
             </div>
@@ -352,7 +367,103 @@
 
       </div>
     </section><!-- End Contact Section -->
-
+    </div>
+    <div class="col-3 col-md-4 col-sm-10 col-lg-3 my-3" id="sticky-sidebar" style="z-index: 1!important;">
+      <div class="sticky-top">
+      <h3><i class="bi bi-newspaper"></i> News</h3>
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="list-group">
+                  <div class="list-group-item news-card bg-white mt-2">
+                    <div class="d-flex justify-content-between">
+                    <div class="col-md-3">
+                        <div class="feed-image"><img class="rounded img-fluid img-responsive news-feed-image" src="assets/img/ice.png"></div>
+                    </div>
+                    <div class="col-md-8 ml-2">
+                        <div class="news-feed-text">
+                            <h5 class="news-title">We welcome a new club admin</h5><span class="news-content">We welcome Sahil to our team as VP Outreach. We are exicited to have him on the team<br></span>
+                            <div class="d-flex flex-row justify-content-between align-items-center mt-2">
+                                <div class="d-flex creator-profile">
+                                    <div class="d-flex flex-column ml-2">
+                                        <span class="news-date">Sept,2021</span>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+                <div class="list-group-item news-card bg-white mt-2">
+                    <div class="d-flex justify-content-between">
+                    <div class="col-md-3">
+                        <div class="feed-image"><img class="news-feed-image rounded img-fluid img-responsive" src="assets/img/htb.jpeg"></div>
+                    </div>
+                    <div class="col-md-8 ml-2">
+                        <div class="news-feed-text">
+                            <h5 class="news-title">Carleton has joined HackTheBox</h5><span class="news-content">Carleton is now listed as a team on HacktheBox. Join us to compete against other schools around the world.<br></span>
+                            <div class="d-flex flex-row justify-content-between align-items-center mt-2">
+                                <div class="d-flex creator-profile">
+                                    <div class="d-flex flex-column ml-2">
+                                        <span class="news-date">Sept,2021</span>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="list-group-item news-card bg-white mt-2">
+              <div class="d-flex justify-content-between">
+              <div class="col-md-3">
+                  <div class="feed-image"><img class="news-feed-image rounded img-fluid img-responsive" src="assets/img/cc.png"></div>
+              </div>
+              <div class="col-md-8 ml-2">
+                  <div class="news-feed-text">
+                      <h5 class="news-title">Carleton Team Places 2nd in National Cybersecurity Competition</h5><span class="news-content">Team Rocket placed Second at CyberSCI Nationals, and will advance to compete internationally.<br></span>
+                      <div class="d-flex flex-row justify-content-between align-items-center mt-2">
+                          <div class="d-flex creator-profile">
+                              <div class="d-flex flex-column ml-2">
+                                  <span class="news-date">July,2021</span>
+                              </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+      </div>       
+</div>
+        </div>
+    </div>
+    </div>
+    <div class="mt-4 mx-1">
+    <h3><i class="bi bi-pin-angle"></i> Bulletin Board</h3>
+    <div class="container justify-content-center">
+    <div class="row">
+      <div class="card text-dark bg-light mb-3 notice">
+        <div class="card-body">
+        <h4>If you find a bug or mistake please report it!</h4>
+        <p>We could use your help maintaining this site. Let us know how we can improve it.</p>
+      </div>
+      </div>
+      <div class="card mt-3 text-dark bg-light mb-3 notice">
+        <div class="card-body">
+        <h4>Interested in helping manage this site?</h4>
+        <p>Contact ES or any other admin on Discord.</p>
+      </div>
+      </div>
+      <div class="card mt-3 text-dark bg-light mb-3 notice">
+        <div class="card-body">
+        <h4>We are now on github!</h4>
+        <p>Check us out at <a href="https://github.com/CarletonCyberSecurityClub">CarletonCyberSecurityClub</a></p>
+      </div>
+      </div>
+    </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  </div>
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -388,11 +499,11 @@
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <!--<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>-->
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
   <script src="assets/js/calendar.js"></script>
-
+  <script src="assets/js/multi-carousel.js"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
