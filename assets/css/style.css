@@ -408,6 +408,10 @@ section {
   overflow: hidden;
 }
 
+section.portfolio {
+  padding: 0;
+}
+
 .section-bg {
   background-color: #f6f9fa;
 }
