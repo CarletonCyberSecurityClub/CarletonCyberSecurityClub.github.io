@@ -281,7 +281,9 @@
     { eventName: 'Classes Resume', calendar: 'School', color: 'orange', d: '2021-09-07', t: '', loc: 'N/A', descr: 'None.'},
     { eventName: 'ALLES! CTF 2021', calendar: 'CTF', color: 'green', d: '2021-09-03', t: '16:00', loc: 'Online', descr: 'None.'},
     { eventName: 'What is 5G? And the security behind it', color: 'blue', calendar: 'Event', d: '2021-09-16', t: '17:30', loc: 'Discord Server', descr: 'None.'},
-    { eventName: 'Sunshine CTF 2021', color: 'green', calendar: 'CTF', d: '2021-09-18', t: '10:00', loc: 'Online', descr: 'None.'}
+    { eventName: 'Sunshine CTF 2021', color: 'green', calendar: 'CTF', d: '2021-09-18', t: '10:00', loc: 'Online', descr: 'None.'},
+    { eventName: 'Accenture Information Session', color: 'blue', calendar: 'Event', d: '2021-09-30', t: '1:30', loc: 'Online', descr: 'See discord for info.'},
+    { eventName: 'Thanksgiving Holiday', color: 'orange', calendar: 'School', d: '2021-10-11', t: 'all day', loc: 'Online', descr: 'NA'}
   ];
 
   function addDate(ev) {
