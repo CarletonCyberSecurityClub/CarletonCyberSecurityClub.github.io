@@ -31,3 +31,17 @@
 .carousel-inner .carousel-item-start { 
   transform: translateX(0);
 }
+
+/* Makes text invisible, but visible to screen readers
+  https://stackoverflow.com/a/27769435
+*/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}

@@ -6,8 +6,8 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Carleton Cybersecurity Club - Home</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta content="Welcome to the Carleton Cyber Security Club! This club is a student-run organization based out of Carleton University, created for sharing a love of cybersecurity." name="description">
+  <meta content="Carleton Cyber Security Club, Carleton University, Cyber Security, Club" name="keywords">
 
   <!-- Favicons -->
   <link rel="icon" type="image/png" href="assets/img/favicon.ico"/>
@@ -56,7 +56,7 @@
       <div class="logo">
         <!--<h1><a href="index.html">Vlava</a></h1>-->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="index.html"><img src="assets/img/1.png" alt="" class="img-fluid"></a>
+        <a href="index.html"><img src="assets/img/1.png" alt="Carleton Cybersecurity Club Logo" class="img-fluid"></a>
       </div>
 
       <nav id="navbar" class="navbar">
@@ -110,68 +110,68 @@
 
         <div class="section-title">
           <h2>Featured Events</h2>
-          <p>Club events and workshops, past and present</p>
+          <p id="featuredEventsDesc">Club events and workshops, past and present</p>
         </div>
         <div>
           <div class="container text-center my-3">
             <div class="row mx-auto my-auto justify-content-center">
                 <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner" role="listbox">
-                      <div class="carousel-item active">
+                    <div class="carousel-inner" role="listbox" aria-labelledby="featuredEventsDesc">
+                      <div class="carousel-item active" role="option">
                         <div class="col-md-3">
                             <div class="card">
                                 <div class="card-img">
-                                    <img src="assets/img/events/CCSC-Accenture.jpg" class="img-fluid">
+                                    <img src="assets/img/events/CCSC-Accenture.jpg" class="img-fluid" alt="Accenture information session: Want to work in the Cyber Security Industry? Thursday Sept 30th 2021 1:30pm to 3pm on the CCSC discord server">
                                 </div>
                                 
                             </div>
                         </div>
                       </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item" role="option">
                             <div class="col-md-3">
                                 <div class="card">
                                     <div class="card-img">
-                                        <img src="assets/img/events/Muhammad-5G-Talk.jpg" class="img-fluid">
+                                        <img src="assets/img/events/Muhammad-5G-Talk.jpg" class="img-fluid" alt="What is 5G and the security behind it? Thursday Sept 16th 2021 5:30pm on the CCSC Discord Server">
                                     </div>
                                     
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item" role="option">
                             <div class="col-md-3">
                                 <div class="card">
                                     <div class="card-img">
-                                        <img src="assets/img/events/fridaynighthacksv2.png" class="img-fluid">
+                                        <img src="assets/img/events/fridaynighthacksv2.png" class="img-fluid" alt="Friday Night Hacks: Learn at your own pace with weekly CTF challenges">
                                     </div>
                                     
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item" role="option">
                             <div class="col-md-3">
                                 <div class="card">
                                     <div class="card-img">
-                                        <img src="assets/img/events/s2.png" class="img-fluid">
+                                        <img src="assets/img/events/s2.png" class="img-fluid" alt="CCSC CTF: A boot2root for beginners 02/21">
                                     </div>
                                    
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item" role="option">
                             <div class="col-md-3">
                                 <div class="card">
                                     <div class="card-img">
-                                        <img src="assets/img/events/network_flyer.png" class="img-fluid">
+                                        <img src="assets/img/events/network_flyer.png" class="img-fluid" alt="Intro to Networking, Speaker: Hatim, 11/20">
                                     </div>
                                     
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item" role="option">
                             <div class="col-md-3">
                                 <div class="card">
                                     <div class="card-img">
-                                        <img src="assets/img/events/Tech_talk_poster1.png" class="img-fluid">
+                                        <img src="assets/img/events/Tech_talk_poster1.png" class="img-fluid" alt="Learn to hack: CCSS WoA Tech Talk with Forest Anderson, Wed 16 Sep 2020 14:00 EDT Presentation, Wed 16 Sep 2020 15:00 CTF">
                                     </div>
                                     
                                 </div>
@@ -179,10 +179,15 @@
                         </div>
                     </div>
                     <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <!-- NOTE: previous/next text is hidden and is here for A11Y reasons-->
+                        <label class="sr-only">Previous</label>
+                        <span class="carousel-control-prev-icon" aria-hidden="true">
+                        </span>
                     </a>
                     <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <label class="sr-only">Next</label>
+                        <span class="carousel-control-next-icon" aria-hidden="true">
+                        </span>
                     </a>
                 </div>
             </div>
@@ -227,7 +232,7 @@
           <div class="col-lg-3 col-md-6 col-sm-6 d-flex align-items-stretch">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/profiles/j_pic.png" class="img img-thumbnail d-block w-50 m-auto rounded-circle" alt="">
+                <img src="assets/img/profiles/j_pic.png" class="img img-thumbnail d-block w-50 m-auto rounded-circle" alt="Justin">
               </div>
               <div class="member-info">
                 <h4>Justin</h4>
@@ -238,7 +243,7 @@
             <div class="col-lg-3 col-md-6 col-sm-6 d-flex align-items-stretch">
               <div class="member">
                 <div class="member-img">
-                  <img src="assets/img/profiles/dv_pic.jpg" class="img img-thumbnail d-block w-50 m-auto rounded-circle" alt="">
+                  <img src="assets/img/profiles/dv_pic.jpg" class="img img-thumbnail d-block w-50 m-auto rounded-circle" alt="David">
                 </div>
                 <div class="member-info">
                   <h4>David</h4>
@@ -249,7 +254,7 @@
           <div class="col-lg-3 col-md-6 col-sm-6 d-flex align-items-stretch">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/profiles/d_pic.png" class="img img-thumbnail d-block w-50 m-auto rounded-circle" alt="">
+                <img src="assets/img/profiles/d_pic.png" class="img img-thumbnail d-block w-50 m-auto rounded-circle" alt="Desmond">
               </div>
               <div class="member-info">
                 <h4>Desmond</h4>
@@ -260,7 +265,7 @@
           <div class="col-lg-3 col-md-6 col-sm-6 d-flex align-items-stretch">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/profiles/rb_pic.png" class="img img-thumbnail d-block w-50 m-auto rounded-circle" alt="">
+                <img src="assets/img/profiles/rb_pic.png" class="img img-thumbnail d-block w-50 m-auto rounded-circle" alt="Robert">
               </div>
               <div class="member-info">
                 <h4>Robert</h4>
@@ -271,7 +276,7 @@
           <div class="col-lg-3 col-md-6 col-sm-6 d-flex align-items-stretch">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/profiles/e_pic.png" class="img img-thumbnail d-block w-50 m-auto rounded-circle" alt="">
+                <img src="assets/img/profiles/e_pic.png" class="img img-thumbnail d-block w-50 m-auto rounded-circle" alt="Emma (ES)">
               </div>
               <div class="member-info">
                 <h4>Emma (ES)</h4>
@@ -282,7 +287,7 @@
           <div class="col-lg-3 col-md-6 col-sm-6 d-flex align-items-stretch">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/profiles/s_pic.jpeg" class="img img-thumbnail d-block w-50 m-auto rounded-circle" alt="">
+                <img src="assets/img/profiles/s_pic.jpeg" class="img img-thumbnail d-block w-50 m-auto rounded-circle" alt="Sahil">
               </div>
               <div class="member-info">
                 <h4>Sahil</h4>
@@ -316,19 +321,20 @@
                 <div class="col-lg-4 info">
                   <i class="bi bi-discord"></i>
                   <h4>Discord:</h4>
-                  <p>Join our discord: <br>https://discord.gg/8Dp4WntxGn</p>
+                  <p>Join our discord: <br><a href="https://discord.gg/8Dp4WntxGn">https://discord.gg/8Dp4WntxGn</a></p>
                 </div>
 
                 <div class="col-lg-4 info mt-4 mt-lg-0">
                   <i class="bi bi-envelope"></i>
                   <h4>Email:</h4>
-                  <p class="text-break">cyberseccarleton@gmail.com</p>
+                  <!-- Note: You may want to revisit putting your email address out in the open like this, likely to attract spam bots... -->
+                  <p class="text-break"><a href="mailto:cyberseccarleton@gmail.com">cyberseccarleton@gmail.com</a></p>
                 </div>
 
                 <div class="col-lg-4 info mt-4 mt-lg-0">
                   <i class="bi bi-linkedin"></i>
                   <h4>LinkedIn:</h4>
-                  <p class="text-break">https://www.linkedin.com/company/carleton-cyber-security-club/</p>
+                  <p class="text-break"><a href="https://www.linkedin.com/company/carleton-cyber-security-club/">https://www.linkedin.com/company/carleton-cyber-security-club/</a></p>
                 </div>
               </div>
             </div>
@@ -396,7 +402,9 @@
                   <div class="list-group-item news-card mt-2">
                     <div class="d-flex justify-content-between">
                     <div class="col-md-3 col-sm-3">
-                        <div class="feed-image"><img class="rounded img-fluid img-responsive news-feed-image" src="assets/img/ice.png"></div>
+                        <div class="feed-image">
+                          <img class="rounded img-fluid img-responsive news-feed-image" src="assets/img/ice.png" alt="Happy ice cube holding gift box">
+                        </div>
                     </div>
                     <div class="col-md-8">
                         <div class="news-feed-text">
@@ -415,7 +423,9 @@
                 <div class="list-group-item news-card mt-2">
                     <div class="d-flex justify-content-between">
                     <div class="col-md-3">
-                        <div class="feed-image"><img class="news-feed-image rounded img-fluid img-responsive" src="assets/img/htb.jpeg"></div>
+                        <div class="feed-image">
+                          <img class="news-feed-image rounded img-fluid img-responsive" src="assets/img/htb.jpeg" alt="HackTheBox logo">
+                        </div>
                     </div>
                     <div class="col-md-8 ml-2">
                         <div class="news-feed-text">
@@ -434,7 +444,9 @@
             <div class="list-group-item news-card mt-2">
               <div class="d-flex justify-content-between">
               <div class="col-md-3">
-                  <div class="feed-image"><img class="news-feed-image rounded img-fluid img-responsive" src="assets/img/cc.png"></div>
+                  <div class="feed-image">
+                    <img class="news-feed-image rounded img-fluid img-responsive" src="assets/img/cc.png" alt="CyberSci Logo">
+                  </div>
               </div>
               <div class="col-md-8 ml-2">
                   <div class="news-feed-text">
