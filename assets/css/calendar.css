@@ -308,6 +308,11 @@ body {
 .event-title{
   font-weight: bold;
 }
+.event-title span{
+  white-space:pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
 
 .event-location {
   color: #353755;

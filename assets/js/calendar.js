@@ -283,7 +283,13 @@
     { eventName: 'What is 5G? And the security behind it', color: 'blue', calendar: 'Event', d: '2021-09-16', t: '17:30', loc: 'Discord Server', descr: 'None.'},
     { eventName: 'Sunshine CTF 2021', color: 'green', calendar: 'CTF', d: '2021-09-18', t: '10:00', loc: 'Online', descr: 'None.'},
     { eventName: 'Accenture Information Session', color: 'blue', calendar: 'Event', d: '2021-09-30', t: '1:30', loc: 'Online', descr: 'See discord for info.'},
-    { eventName: 'Thanksgiving Holiday', color: 'orange', calendar: 'School', d: '2021-10-11', t: 'all day', loc: 'Online', descr: 'NA'}
+    { eventName: 'Thanksgiving Holiday', color: 'orange', calendar: 'School', d: '2021-10-11', t: 'all day', loc: 'Online', descr: 'NA'},
+    { eventName: 'IOT: Connecting the Physical and Digital World', color: 'blue', calendar: 'Event', d: '2021-10-19', t: '5:30 PM', loc: 'Discord', descr: 'Speaker: Hemant Gupta'},
+    { eventName: 'Reading Week', color: 'orange', calendar: 'School', d: '2021-10-25', t: 'all day', loc: 'N/A', descr: 'NA'},
+    { eventName: 'Reading Week', color: 'orange', calendar: 'School', d: '2021-10-26', t: 'all day', loc: 'N/A', descr: 'NA'},
+    { eventName: 'Reading Week', color: 'orange', calendar: 'School', d: '2021-10-27', t: 'all day', loc: 'N/A', descr: 'NA'},
+    { eventName: 'Reading Week', color: 'orange', calendar: 'School', d: '2021-10-28', t: 'all day', loc: 'N/A', descr: 'NA'},
+    { eventName: 'Reading Week', color: 'orange', calendar: 'School', d: '2021-10-29', t: 'all day', loc: 'N/A', descr: 'NA'},
   ];
 
   function addDate(ev) {
@@ -293,6 +299,6 @@
   var calendar = new Calendar('#calendar', data);
   const today = new Date();
   const filterByToday = arr => arr.filter(({ d }) => new Date(d.replace(/-/g, "/")) >= today);
-  calendar.renderEvents(filterByToday(data) , "all");
+  calendar.renderEvents(filterByToday(data).slice(0,4), "all");
 }();
 
